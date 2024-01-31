@@ -1,0 +1,202 @@
+@charset "UTF8"; /**/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*importa a fonte*/
+
+@font-face { /*configura a fonte importada*/
+    font-family: 'Android'; /*nome que a fonte vai ter*/
+    src: url('../fontes/idroid.otf') format('opentype'); /*pasta do arquivo da fonte e formato da fonte*/
+    font-weight: normal; /*peso da fonte*/
+}
+
+* { /*configurações gerais para todas as tags*/
+    margin: 0px; /*margem*/
+    padding: 0px; /*preenchimento*/
+}
+
+:root { /*para criar variáveis*/
+    /*--nome-desejado: xxx;*/
+    --cor0: #c5ebd6; /*variavel de cor*/
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; /*variavel de fonte*/
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background-color: var(--cor0); /*cor de fundo*/
+    font-family: var(--fonte-padrao); /*fonte*/
+}
+
+a.externo:after {
+    content: '00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); /*cria degrade na cor de fundo*/
+    min-height: 150px; /*altura mínima*/
+    text-align: center; /*centraliza*/
+    padding-top: 40px; /*preenche no topo*/
+}
+
+header > h1 {
+    color: white; /*cor da letra*/
+    font-family: var(--fonte-destaque); /*tipo de fonte*/
+    font-size: 3em; /*tamanho da fonte*/
+    font-weight: normal; /*peso da fonte*/
+    margin-bottom: 20px; /*margem de baixo*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267); /*sombra nas palavras*/
+}
+
+header > p {
+    color: white; /*cor da fonte*/
+    font-family: var(--fonte-padrao); /*tipo de fonte*/
+    font-size: 1.2em; /*tamanho da fonte*/
+    max-width: 500px; /*largura máxima*/
+    margin: auto; /*centraliza*/
+    padding-left: 10px; /*preeenche a esquerda*/
+    padding-right: 10px; /*preenche a direita*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315); /*sombra no texto*/
+}
+
+nav {
+    background-color: var(--cor5); /*cor de fundo*/
+    padding: 10px; /*preenche*/
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192); /*sombra*/
+
+}
+
+nav > a {
+    color: var(--cor1); /*cor do texto*/
+    padding: 10px; /*preenche*/
+    text-decoration: none; /*retira a decoração do texto*/
+    font-weight: bold; /*bold - negrito*/
+    border-radius: 5px; /*deixa as bordas arredondadas*/
+    transition-duration: 0.5s; /*tempo de duração transacionar quando passar o mouse por cima*/
+}
+
+nav > a:hover { /*hover - quanod passar o mouse por cima*/
+    background-color: var(--cor1); /*cor de fundo*/
+    color: var(--cor5); /*cor da fonte*/
+}
+
+main {
+    background-color: white; /*cor de fundo*/
+    min-width: 300px; /*largura mínima*/
+    max-width: 1000px; /*largura máxima*/
+    margin: auto; /*centraliza*/
+    margin-bottom: 30px; /*margem de baixo*/
+    padding: 20px; /*preenchimento*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418); /*sombra da caixa*/
+    border-bottom-left-radius: 10px; /*arredonda a borda inferior esquerda*/
+    border-bottom-right-radius: 10px; /*arredonda a borda inferior direita*/
+}
+
+main h1 {
+    color: var(--cor5); /*cor do texto*/
+    font-family: var(--fonte-android); /*tipo de fonte*/
+}
+
+main h2 {
+    font-family: var(--fonte-android); /*tipo de fonte*/
+    color: var(--cor4); /*cor da letra*/
+    font-size: 1.3em; /*tamanho da letra*/
+    background-image: linear-gradient(to right, var(--cor1), transparent); /*coloca cor no fundo do texto, esse começa da esquerda e termina transparente*/
+    text-indent: 8px; /*espaço no inicio do parágrafo*/
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify; /*os espaços entre as palavras é o mesmo*/
+    text-indent: 30px; /*espaço no inicio de cara parágrafo*/
+    line-height: 2em; /*espaço entre as linhas do parágrafo*/
+    font-size: 1em; /*tamanho da letra*/
+}
+
+main strong {
+    color: var(--cor4); /*cor da letra*/
+    font-weight: bold; /*bold -- negrito*/
+}
+
+main a {
+    text-decoration: none; /*tira a decoração do link, no caso o underline*/
+    font-weight: bold; /*bold -- negrito*/
+    color: var(--cor5); /*cor da letra*/
+    background-color: var(--cor0); /*cor do fundo*/
+    padding: 2px 6px; /*preenchimento (horizontal-vertical)*/
+}
+
+main a:hover { /*hover - quando o mouse passa por cima*/
+    text-decoration: underline; /*underline - sublinhado*/
+    color: var(--cor4); /*cor da letra*/
+}
+
+main img {
+    width: 100%; /*quando a tela diminui a imagem continua com as proporções da imagem original*/
+}
+
+main img.pequena {
+    max-width: 350px; /*largura maáxima*/
+    display: block; /*transforma a imagem em um bloco*/
+    margin: auto; /*centraliza*/
+}
+
+main .video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+main iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1); /*cor de fundo*/
+    padding: 10px; /*preenche*/
+    border-radius: 10px; /*arredonda as bordas*/
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside h3 {
+    background-color: var(--cor4); /*cor de fundo*/
+    color: white; /*cor do texto*/
+    padding: 10px; /*preenchimento*/
+    margin: -10px -10px 0px -10px; /*margem negativa*/
+    border-radius: 10px 10px 0px 0px;; /*arredondamento das pontas*/
+}
+
+aside ul {
+    list-style-position: inside; /*coloca s bolinhas pra dentro*/
+    columns: 2; /*divide a lista em colunas*/
+    list-style-type: '\2714\00A0'; /*coloca emojis (00A0 da espaço)(não é compatível com todo tipo de navegador)*/
+}
+
+footer {
+    background-color: var(--cor5); /*cor de fundo*/
+    color: white; /*cor da letra*/
+    text-align: center; /*centraliza texto*/
+    font-size: 0.8em; /*tamanho da fonte*/
+    padding: 5px; /*preenchimento*/
+}
+
+footer a {
+    color: var(--cor0); /*cor da fonte*/
+    font-weight: bolder; /*peso da fonte*/
+    text-decoration: none; /*tira a decoração do texto*/
+}
+
+footer a:hover { /*hover - quando passa o mouse por cima*/
+    text-decoration: underline; /*sublinha o texto*/
+    color: var(--cor1); /*cor do texto*/
+}
