@@ -1,0 +1,17 @@
+shft + tab = apaga espaços à esquerda
+
+ctrl + espaço = escolher opção (pag interna por exemplo)
+
+../ = voltar para a página anterior
+
+https://www.iana.org/assignments/media-types/media-types.xhtml
+
+favicon.io ---> converter PNG para ico
+
+https://video.online-convert.com/pt/converter-para-ogv ---> converter vídeo para OGV
+
+inserir vídeos do youtube ---> compartilhar - incorporar - copiar
+
+vimeo
+
+ctrl + x = apaga linha inteira
