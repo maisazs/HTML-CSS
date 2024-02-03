@@ -1,0 +1,87 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+img {
+    width: 100%;
+}
+:root {
+    --Passion-one: 'Passion One', sans-serif;
+    --Srirocho: 'Sriracha', cursive;
+}
+
+body {
+    background-color: rgb(180, 180, 180);
+    font-family: var(--Srirocho);
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    font-family: var(--Passion-one);
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header div p {
+    font-size: 1em;
+}
+
+header div p span {
+    font-size: 2em;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    max-width: 800px;
+    min-width: 400px;
+    text-align: left;
+    margin: auto;
+    white-space: pre-line;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 200%;
+}
+
+main p {
+    padding: 20px;
+}
+
+.paragrafo-imagem {
+    img {
+        margin-top: -120px;
+    }
+    p {
+        position: absolute;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.404);
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
