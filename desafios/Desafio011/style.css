@@ -10,6 +10,17 @@
 img {
     width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(131, 131, 131);
+    cursor: pointer;
+}
+
 :root {
     --Passion-one: 'Passion One', sans-serif;
     --Srirocho: 'Sriracha', cursive;
@@ -42,8 +53,12 @@ header div p {
     font-size: 1em;
 }
 
+header div p a {
+    font-size: 1.5em;
+}
+
 header div p span {
-    font-size: 2em;
+    font-size: 1em;
 }
 
 main {
