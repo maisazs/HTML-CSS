@@ -63,3 +63,17 @@ section#redes-sociais {
     flex-direction: column;
     align-items: end;
 }
+
+@media screen and (max-width: 600px){
+    section#redes-sociais {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section#redes-sociais img {
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+    }
+}
